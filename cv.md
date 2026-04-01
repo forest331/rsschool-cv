@@ -10,12 +10,12 @@ I'm 26 years old and I'm a tattoo artist. I've been 'hurting' people for over th
 
 ## Skills
 
-HTML5;
-CSS3;
-JavaScript (basics);
-Git;
-Github;
-Figma;
+- HTML5;
+- CSS3;
+- JavaScript (basics);
+- Git;
+- Github;
+- Figma;
 
 ## Code Example
 
