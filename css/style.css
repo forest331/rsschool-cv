@@ -1,0 +1,182 @@
+body {
+	font-family: 'Montserrat', sans-serif;
+	min-height: 100vh;
+	margin: 0 auto;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	font-size: 16px;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+ul {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+}
+
+/* section {
+	margin: 0 20px 20px;
+} */
+
+.container {
+	max-width: 1440px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+.nav {
+	padding: 20px 0 30px 0;
+}
+
+.nav__list {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.nav__link {
+	padding: 0 20px;
+	line-height: 50px;
+	color: #829985;
+	transition: color 0.5s;
+}
+
+.nav__link:hover {
+	color: #4d2323;
+}
+
+.profile {
+	margin-top: 100px;
+}
+
+.profile__wrapper {
+	display: flex;
+	align-items: center;
+	gap: 70px;
+}
+
+.profile__user {
+	display: flex;
+	flex-direction: column;
+	align-items: end;
+	gap: 20px;
+}
+
+.profile__list {
+	display: flex;
+	flex-direction: column;
+	gap: 55px;
+}
+
+.profile__link {
+	padding-left: 10px;
+	color: #829985;
+}
+
+/* .profile__title {
+	display: flex;
+	justify-content: center;
+} */
+
+.profile__title {
+	font-weight: 600;
+	font-style: normal;
+	font-size: 55px;
+}
+
+.profile__user-img {
+	width: 270px;
+	height: 380px;
+	border-radius: 135px;
+}
+
+.about {
+	margin-top: 100px;
+}
+
+.about__title {
+	margin-bottom: 25px;
+	font-size: 25px;
+}
+
+.inform {
+	margin-top: 100px;
+	display: flex;
+	flex-wrap: wrap;
+	row-gap: 50px;
+}
+
+.inform__title {
+	padding-bottom: 8px;
+	position: relative;
+	display: inline-block;
+	font-size: 25px;
+	font-weight: 700;
+}
+
+.inform__title::before {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 26px;
+	height: 2px;
+	background-color: #000000;
+}
+
+.inform-box {
+	width: 50%;
+}
+
+.inform__list {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+	padding: 20px 0 0 30px;
+}
+
+.cod div {
+	padding: 8px 0 0 30px;
+}
+
+.footer {
+	margin-top: 50px;
+	background-color: #829985;
+}
+
+.footer__wrapper {
+	height: 100px;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	gap: 100px;
+}
+
+.footer__link {
+	font-size: 20px;
+	font-weight: 600;
+	color: #000000;
+}
+
+.footer__wrapper-right {
+	display: flex;
+	align-items: center;
+	gap: 30px;
+}
+
+.footer__link-logo img {
+	width: 75px;
+	height: 30px;
+}
