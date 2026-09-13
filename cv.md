@@ -1,8 +1,8 @@
-# Andrey Gevrayow
+# Andrey Gevrasyow
 
 ## Contact information
 
-- **Email:** andrey.gevradyow@gmail.com
+- **Email:** andrey.gevrasyow@gmail.com
 - **Telegram:** @Forest3377
 - **Discord:** forestss
 - **GitHub:** forest331
@@ -20,8 +20,9 @@ I'm 26 years old and I'm a tattoo artist. I've been 'hurting' people for over th
 
 ## Code Example
 
-```function perimeterSequence(a,n) {
-return (a * 4) * n
+```javascript
+function perimeterSequence(a, n) {
+	return a * 4 * n
 }
 ```
 
