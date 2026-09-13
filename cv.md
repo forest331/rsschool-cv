@@ -21,7 +21,7 @@ I'm 26 years old and I'm a tattoo artist. I've been 'hurting' people for over th
 ## Code Example
 
 ```function perimeterSequence(a,n) {
-return (a _ 4) _ n
+return (a * 4) * n
 }
 ```
 
