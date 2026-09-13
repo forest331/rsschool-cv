@@ -14,17 +14,18 @@ I'm 26 years old and I'm a tattoo artist. I've been 'hurting' people for over th
 
 ## Skills
 
-- **Languages:** HTML5, CSS3, SCSS, JavaScript (basic)
+- **Programming Languages:** HTML5, CSS3, SCSS, JavaScript (basic)
 - **Tools:** Git, GitHub, VS Code, Markdown, vite
 - **Currently Learning:** React, TypeScript
 
 ## Code Example
 
-function perimeterSequence(a,n) {
+```function perimeterSequence(a,n) {
 return (a _ 4) _ n
 }
+```
 
-## Languages
+## Spoken Languages
 
 - English (A2)
 - Russian (native)
