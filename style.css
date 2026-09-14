@@ -1,5 +1,265 @@
-* {
+*::before,
+*::after {
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
+}
+
+:root {
+	--color-bg: #f5f6f8;
+	--color-card: #ffffff;
+	--color-text: #1f2937;
+	--color-muted: #6b7280;
+	--color-accent: #2563eb;
+	--color-accent-hover: #1d4ed8;
+	--color-border: #e5e7eb;
+	--shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.05);
+	--shadow-md: 0 4px 12px rgba(0, 0, 0, 0.06);
+	--radius: 12px;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: 'Inter', Arial, sans-serif;
+	font-size: 16px;
+	line-height: 1.6;
+	color: var(--color-text);
+	background-color: var(--color-bg);
+	padding: 32px 16px;
+	-webkit-font-smoothing: antialiased;
+}
+
+a {
+	color: var(--color-accent);
+	text-decoration: none;
+	transition: color 0.2s ease;
+}
+
+a:hover {
+	color: var(--color-accent-hover);
+	text-decoration: underline;
+}
+
+/* Container */
+
+.cv-container {
+	max-width: 900px;
+	margin: 0 auto;
+	background-color: var(--color-card);
+	border-radius: var(--radius);
+	box-shadow: var(--shadow-md);
+	overflow: hidden;
+}
+
+/* Header */
+
+.cv-header {
+	display: flex;
+	gap: 32px;
+	align-items: center;
+	padding: 40px;
+	border-bottom: 1px solid var(--color-border);
+}
+
+.cv-photo {
+	width: 160px;
+	height: 160px;
+	border-radius: 50%;
+	object-fit: cover;
+	object-position: center top;
+	flex-shrink: 0;
+	border: 3px solid var(--color-bg);
+	box-shadow: var(--shadow-sm);
+}
+
+.cv-header-info h1 {
+	font-size: 2rem;
+	font-weight: 700;
+	letter-spacing: -0.02em;
+	margin-bottom: 4px;
+}
+
+.cv-role {
+	color: var(--color-muted);
+	font-size: 0.95rem;
+	margin-bottom: 16px;
+}
+
+/* Contacts */
+
+.cv-contacts {
+	list-style: none;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+	gap: 6px 24px;
+	font-size: 0.9rem;
+}
+
+.cv-contacts li span {
+	color: var(--color-muted);
+	font-weight: 500;
+	margin-right: 6px;
+}
+
+/* Nav */
+
+.cv-nav {
+	background-color: #fafbfc;
+	border-bottom: 1px solid var(--color-border);
+	padding: 12px 40px;
+}
+
+.cv-nav ul {
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 24px;
+}
+
+.cv-nav a {
+	font-weight: 500;
+	font-size: 0.9rem;
+	color: var(--color-text);
+	padding: 6px 0;
+	border-bottom: 2px solid transparent;
+	transition:
+		border-color 0.2s ease,
+		color 0.2s ease;
+}
+
+.cv-nav a:hover {
+	color: var(--color-accent);
+	border-bottom-color: var(--color-accent);
+	text-decoration: none;
+}
+
+/* Main */
+
+.cv-main {
+	padding: 32px 40px;
+	display: flex;
+	flex-direction: column;
+	gap: 32px;
+}
+
+.cv-section h2 {
+	font-size: 1.25rem;
+	font-weight: 600;
+	color: var(--color-text);
+	margin-bottom: 12px;
+	padding-bottom: 8px;
+	border-bottom: 2px solid var(--color-accent);
+	display: inline-block;
+}
+
+.cv-section p {
+	color: var(--color-text);
+}
+
+/* Lists */
+
+.cv-list {
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.cv-list li {
+	position: relative;
+	padding-left: 20px;
+	color: var(--color-text);
+}
+
+.cv-list li::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 10px;
+	width: 6px;
+	height: 6px;
+	border-radius: 50%;
+	background-color: var(--color-accent);
+}
+
+/* Code block */
+
+.cv-code {
+	background-color: #1f2937;
+	color: #f9fafb;
+	padding: 16px 20px;
+	border-radius: 8px;
+	font-family: 'Fira Code', Consolas, monospace;
+	font-size: 0.9rem;
+	overflow-x: auto;
+	line-height: 1.5;
+}
+
+.cv-code code {
+	font-family: inherit;
+}
+
+/* Footer */
+
+.cv-footer {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 16px;
+	padding: 20px 40px;
+	border-top: 1px solid var(--color-border);
+	background-color: #fafbfc;
+	font-size: 0.85rem;
+	color: var(--color-muted);
+}
+
+.cv-footer-link {
+	font-weight: 500;
+}
+
+.cv-footer-year {
+	margin: 0;
+}
+
+.cv-footer-logo img {
+	display: block;
+	height: 28px;
+	width: auto;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 640px) {
+	.cv-header {
+		flex-direction: column;
+		text-align: center;
+		padding: 32px 24px;
+	}
+
+	.cv-contacts {
+		grid-template-columns: 1fr;
+		text-align: left;
+	}
+
+	.cv-nav,
+	.cv-main,
+	.cv-footer {
+		padding-left: 24px;
+		padding-right: 24px;
+	}
+
+	.cv-nav ul {
+		justify-content: center;
+	}
+
+	.cv-footer {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.cv-header-info h1 {
+		font-size: 1.6rem;
+	}
 }
